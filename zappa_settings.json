@@ -1,0 +1,17 @@
+{
+    "production": {
+        "app_function": "rekognition_handler.app",
+        "aws_region": "ap-southeast-1",
+        "project_name": "aws-rekognition",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-production-aws-rekognition",
+        "manage_roles": false,
+        "role_name": "basic-lambda",
+        "role_arn": "YOUR_IAM_ROLE_ARN",
+        "num_retained_versions": 1,
+        "keep_warm": true,
+        "aws_environment_variables": {
+            "S3_BUCKET": "YOUR_RAW_IMAGE_BUCKET"
+        }
+    }
+}

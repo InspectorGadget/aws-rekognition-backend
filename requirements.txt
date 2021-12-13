@@ -1,0 +1,4 @@
+zappa
+boto3
+flask
+flask-cors
